@@ -64,7 +64,29 @@ agent-to-environment interactions spatiotemporally. Moreover, it allows us to ex
 		      of human behavior and to test existing theory on environments that represent actual, real world 
 		      settings. As such, 
 		      they seek a balance between abstraction and reality. This balance provides a certain level 
-		      of exploratory flexibility, but at the same time, grounds the model in reality. <!--The figure below illustrates
+		      of exploratory flexibility, but at the same time, grounds the model in reality. 
+		      
+		      Agent-based models can range from stylized “toy” models that represent some caricature of reality to fully 
+		      calibrated models that demonstrate quantitative agreement with micro-level processes (Axtell and Epstein, 1994; 
+		      Parker et al., 2003; Crooks et al., 2008). In between these two extremes we can develop models that are 
+		      explanatory in their intent to explore theory and descriptive in their use of empirical data to build 
+		      the environment and create the agents. When talking about theory we must distinguish between the testing of 
+		      theory in model results as through “what if” scenarios and the application of theory in guiding model development. 
+		      Using ABM, we can test current theory, theoretical assumptions, and empirical findings. While ABMs are ideal for 
+		      this type of “what if” analysis, many theories are more internal in nature (e.g., social identity theory). That is, 
+		      they have more to do with individuals’ decision-making process and thus must be considered as part of the development 
+		      of the agents’ cognitive model. Implementing theory into a computational framework, however, is not trivial as it 
+		      was likely not designed for computer code. “Fitting” theory into the agents’ cognition may be operationalized 
+		      through an existing conceptual framework (e.g., PECS, BDI). Moreover, the integration of ABMs with social network 
+		      analysis (SNA) allows us to structure and quantify the agents’ communication networks, allowing us to simulate for 
+		      example, the diffusion of a rumor, social influence through networks, and the sharing of knowledge across an 
+		      organization. Theoretically- and empirically-grounded ABMs that I have developed or are in the process of developing 
+		      include a simulation of the emergence of riots in a Kenyan informal settlement (Pires and Crooks, 2017), a model of 
+		      the 10 year resource-driven war in Sierra Leone (Pires and Crooks, 2016), and a simulation of attitude formation and 
+		      knowledge sharing through an organization (PI for the Early Career Army Research Institute Grant #W911NF-16-1-0574).
+
+		      
+		      <!--The figure below illustrates
 		      how different classication schemes 
 
 The development of these models is facilated through the integration of ABM with SNA and GIS. 
@@ -89,9 +111,29 @@ The development of these models is facilated through the integration of ABM with
 			    -->
 			
 	<h2>Working with "All" Data</h2>
-	      <p>An important theme in my postdoc research has been the utility of applying "all" data, including administrative, opportunity, to problems 
-		      in the social world. 
-		      air quality, p and g, census
+	      <p>An important theme in my postdoc research has been the utility of applying "all" data,including administrative, 
+		      opportunity, and survey data, to issues in the social world. These projects have covered a diverse range of 
+		      applications, from industrial innovation to environmental issues.  Moreover, due to the human component 
+		      inherent in studying social problems, the data used to develop these models has frequently been unstructured, 
+		      incomplete, and messy. As such, these data often need to be re-purposed as they were not collected for research 
+		      purposes. In a project for Proctor \& Gamble to evaluate their supply chain we were provided with vast amounts o
+		      f data from very disparate data sources, including customer orders, production runs, and shipments. 
+		      I took a disciplined approach to repurposing these data and developed a “data model.” The data model 
+		      involves all steps between data collection and modeling, including the initial screening of the data collected, 
+		      the cleaning and restructuring of the data for the project’s purposes, and the understanding of the 
+		      relationships and linkages between data tables. Because of the disparate nature of these data, linking 
+		      it end-to-end posed a challenge. For instance, customer orders did not link directly to production runs. 
+		      By assuming a “first-in, first-out” method, I simulated each shipment back to a production run, and 
+		      subsequently, a customer order. For the first time, P&G had a model for which they could link supply 
+		      chain data from orders to shipments. An expanded version of the data model has now been applied to several 
+		      other projects within the lab. Empirically driven research I have performed include developing discrete-event 
+		      simulations to model the supply chain of a P&G manufacturing site; coupling a synthetic population of the 
+		      nearly 5 million residents of Houston to a spatiotemporal air quality model to get individual exposure levels 
+		      to ozone; using SNA to analyze spatiotemporal event data from the Colombian conflict; and performing 
+		      comparative analysis of administrative and survey data for the U.S. Census Bureau. Given the sheer size 
+		      of input data, building these models may require the use of big data analytics. For example, I used a 
+		      combination of database management technique and high performance computing to integrate the 5 million 
+		      synthetic individuals of Houston with 1.2 million activity locations and the hourly ozone data of 47 monitors. 
       </section>
     </div>
 	
